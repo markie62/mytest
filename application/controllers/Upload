@@ -1,0 +1,81 @@
+<?php
+// defined('BASEPATH') OR exit('No direct script access allowed');
+
+// class Upload extends CI_Controller {
+
+//     private $data;
+
+//   public function __construct() {
+//        parent::__construct();
+
+// }
+
+
+// private function do_upload($user_id){
+        
+//         $year = date("Y");
+//         $month = date("m");
+//         $folder = "./public/assets/img/site_images/cofrad/".$year."/".$month;
+
+//         if (!file_exists($folder)) {
+//             mkdir($folder, 0777, true);
+//             mkdir($folder.'/thumbnail', 0777, true);
+
+//             create_index_html($folder);
+//         }
+    
+//         $image_name = md5($user_id).'_'.time().'_'.$_FILES['file']['name'];
+//         $image_name = str_replace("^", "_", $image_name);
+       
+//         $config['upload_path']          = $folder;
+//         $config['allowed_types']        = 'gif|jpg|png';
+//         $config['file_name']            = $image_name;
+
+//         $this->load->library('upload', $config);
+//         $this->load->library('image_lib');
+
+//         if ($this->upload->do_upload('file')){
+//             $this->db->where("user_id" , $user_id)->update("users" , [
+//                 "image_path" => $year."/".$month ,
+//                 "image_name" => $image_name
+//             ]);
+//         }
+
+
+
+
+//     if ($this->upload->do_upload('file')){
+
+//             // palitan mo lang ung 'users' na table kung saan mo uupload
+
+//              $image_path = "/public/upload/user/".$year."/".$month;
+//              $image_name = $image_name
+            
+//             $this->db->where("user_id" , $user_id)->update("users" , [
+//                 "image_path" => $year."/".$month ,
+//                 "image_name" => $image_name
+//             ]);
+//         }
+
+
+
+
+
+
+
+
+
+
+
+
+//     }
+
+
+
+
+
+
+
+// }
+
+
